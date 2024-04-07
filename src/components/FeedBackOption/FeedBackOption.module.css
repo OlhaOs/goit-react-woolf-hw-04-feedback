@@ -1,0 +1,27 @@
+.feedBackContainer {
+  width: 600px;
+  margin: 100px auto;
+}
+.title {
+  text-align: center;
+}
+.optionBtn {
+  width: calc((100% - 40px) / 3);
+  height: 50px;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 1px 2px 2px 1px rgb(164, 164, 164);
+  margin-right: 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.optionBtn:last-child {
+  margin-right: 0;
+}
+.optionBtn:hover {
+  transform: scale(1.01);
+}
+.optionBtn:active {
+  transform: scale(0.97);
+}

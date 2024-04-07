@@ -1,0 +1,9 @@
+.statList {
+  list-style: none;
+  text-align: start;
+}
+
+.statItem {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
