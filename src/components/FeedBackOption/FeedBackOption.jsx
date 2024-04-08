@@ -1,5 +1,4 @@
 import css from './FeedBackOption.module.css';
-import { nanoid } from 'nanoid';
 
 const FeedBackOption = ({ options, onLeaveFeedback }) => {
   return (
@@ -7,10 +6,10 @@ const FeedBackOption = ({ options, onLeaveFeedback }) => {
       {options.map(option => {
         return (
           <button
-            key={nanoid()}
+            key={option}
             type="button"
             className={css.optionBtn}
-            onClick={onLeaveFeedback}
+            onClick={() => onLeaveFeedback(option)}
             name={option}
           >
             {option}

@@ -11,21 +11,14 @@ export class App extends Component {
     bad: 0,
   };
 
-  handleClick = e => {
-    const name = e.target.name;
+  handleClick = name => {
     this.setState(prevState => ({
       [name]: prevState[name] + 1,
     }));
   };
 
   countTotalFeedback = () => {
-    let total = 0;
-
-    for (const value of Object.values(this.state)) {
-      total += value;
-    }
-
-    return total;
+    return Object.values(this.state).reduce((total, value) => total + value, 0);
   };
 
   countPositiveFeedbackPercentage = () => {
