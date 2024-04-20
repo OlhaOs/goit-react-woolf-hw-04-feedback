@@ -1,6 +1,10 @@
 import css from './Statistics.module.css';
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+const Statistics = ({
+  options: { good, neutral, bad },
+  total,
+  positivePercentage,
+}) => {
   return (
     <>
       <ul className={css.statList}>
